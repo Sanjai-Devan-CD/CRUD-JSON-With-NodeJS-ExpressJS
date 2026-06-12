@@ -1,0 +1,13 @@
+{
+  "Users": [
+    {
+      "id": 2,
+      "name": "Vasu",
+      "email": "vasu@gmail.com",
+      "phone": "1234567890",
+      "role": "Admin",
+      "country": "India",
+      "place": "Madurai"
+    }
+  ]
+}
