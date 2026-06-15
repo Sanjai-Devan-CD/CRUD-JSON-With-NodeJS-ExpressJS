@@ -162,13 +162,12 @@ const deleteUser = async (id) => {
     console.log(`Get the User List ${userList}`);
     const indexUser = userList.findIndex((u) => u.id === id);
     console.log(`User Details ${indexUser}`)
-    if(indexUser === -1)
-    {
+    if (indexUser === -1) {
       return null;
     }
-    userList.splice(indexUser,1);
+    userList.splice(indexUser, 1);
 
-        try {
+    try {
       await fs.writeFile(
         dbpath,
         JSON.stringify({ Users: userList }, null, 2),
